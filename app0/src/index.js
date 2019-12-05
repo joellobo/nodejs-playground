@@ -1,7 +1,10 @@
-import 'dotenv/config';
-import cpfValidator from './cpf';
+import jwt from './modules/jwt';
+//const jwt = require('./modules/jwt');
 
-console.log('Hello Node.js project.');
-console.log(process.env.MY_SECRET);
+const option = {
+    type: 'PDF',
+    validate: true
+};
 
-console.log(cpfValidator('999999999'));
+const content = jwt.load('', option);
+console.log(`content:${content}`);
