@@ -1,0 +1,8 @@
+npm install pm2@latest -g
+pm2 start app.js
+pm2 list
+pm2 logs
+pm2 monit
+
+
+
